@@ -1,3 +1,5 @@
+require 'dotenv/load'
 require_relative "lib/bot_mr_alex.rb"
 
-BotMrAlex.new_session
+bot = BotMrAlex.new(ENV['TOKEN'])
+bot.new_session
